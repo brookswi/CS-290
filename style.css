@@ -1,0 +1,38 @@
+/******************************************************************************
+** Filename: style.css
+** Author: William Ryan Brooks
+** Date: 7/2/17
+** Description: Linked to by content.html. Used to style a table and two divs.
+*******************************************************************************/
+table, th, td {
+    border-style:solid;
+    border-color:black;
+}
+tbody th{
+    font-weight:normal;
+}
+tbody tr:nth-of-type(2), tbody tr:nth-of-type(4)  {
+    background-color:blue;
+    color:white;
+}
+tbody tr:nth-of-type(1), tbody tr:nth-of-type(3), tbody tr:nth-of-type(5) {
+    background-color:red;
+    color:white;
+}
+.outer-content {
+    background-color:pink;
+    width:75%;
+    height:25px;
+    position:relative;
+    left:0;
+    margin-top:20px; 
+}
+.inner-content {
+    background-color:blue;
+    width:75%;
+    height:50%;
+    position:absolute;
+    top:25%;
+    left:12.5%; 
+}
+    

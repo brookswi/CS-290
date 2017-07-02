@@ -1,0 +1,155 @@
+<!--
+Filename: content.html
+Author: William Ryan Brooks
+Date: 7/2/17
+Description: HTML file that contains a table, definition list, a GET form, and a POST form.
+Links to style.css.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body> 
+    <section>
+      <table>
+        <caption>Movie Information</caption>
+        <thead>
+          <tr>
+            <th>
+            <th> Director
+            <th> MPAA Rating 
+            <th> Runtime (minutes)
+            <th> Release Date
+            <th> Won an Oscar?
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="2"> Footer 1
+            <td colspan="4"> Footer 2
+        </tfoot>
+        <tbody>
+          <tr>
+            <th><i> Logan </i> 
+            <td> James Mangold
+            <td> R
+            <td> 135
+            <td> 3/3/17
+            <td> No
+          <tr>
+            <th><i> Spotlight </i>
+            <td> Tom McCarthy
+            <td> R
+            <td> 129
+            <td> 11/6/15
+            <td> Yes
+          <tr>
+            <th><i> Toy Story </i> 
+            <td> John Lasseter 
+            <td> G
+            <td> 80
+            <td> 11/22/95 
+            <td> No
+          <tr>
+            <th><i> Forrest Gump </i> 
+            <td> Robert Zemeckis
+            <td> PG-13
+            <td> 142
+            <td> 7/6/94
+            <td> Yes  
+          <tr>
+            <th><i> Fargo </i>
+            <td> Joel Coen
+            <td> R
+            <td> 97
+            <td> 3/8/96
+            <td> No
+        </tbody>
+      </table>
+    </section>
+    <br>
+    <section>
+      <dl>
+        <dt>Superhero Name</dt>
+        <dd>Spider-Man</dd>
+        <dt>Secret Identity</dt>
+        <dd>Peter Parker</dd>
+        <dt>Arch Nemesis</dt>
+        <dd>Green Goblin</dd>
+        <dt>First Appearance</dt>
+        <dd>Amazing Fantasy #15</dd>
+      </dl>
+    </section>
+    <section>
+      <div class="outer-content">
+        <div class="inner-content"></div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+        <fieldset>
+          <legend>Information:</legend>
+            <p>
+              <label>Username:
+                <input type="text" name="text-input">
+              </label>
+            </p> 
+            <p>
+              <label>Password:
+                <input type="password" name="password-input">
+              </label>
+            </p>
+            <p>
+              <label>Phone Number:
+                <input type="number" name="numerical-input">
+              </label>
+            </p>
+            <p>What is your favorite candy?<br><br>
+              <label for="snickers">Snickers</label>
+              <input type="radio" name="candy" id="snickers" value="snickers"><br><br>
+              <label for="skittles">Skittles</label>
+              <input type="radio" name="candy" id="skittles" value="skittles"><br><br>
+              <label for="mentos">Mentos</label>
+              <input type="radio" name="candy" id="mentos" value="mentos"><br>     
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <br>
+    <section>
+      <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+          <legend>Information:</legend>
+            <p>
+              <label>Username:
+                <input type="text" name="text-input">
+              </label>
+            </p> 
+            <p>
+              <label>Password:
+                <input type="password" name="password-input">
+              </label>
+            </p>
+            <p>
+              <label>Phone Number:
+                <input type="number" name="numerical-input">
+              </label>
+            </p>
+            <p>What is your favorite candy?<br><br>
+              <label for="snickers">Snickers</label>
+              <input type="radio" name="candy" id="snickers" value="snickers"><br><br>
+              <label for="skittles">Skittles</label>
+              <input type="radio" name="candy" id="skittles" value="skittles"><br><br>
+              <label for="mentos">Mentos</label>
+              <input type="radio" name="candy" id="mentos" value="mentos"><br>     
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+  </body>
+</html>
+
